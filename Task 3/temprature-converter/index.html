@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Temperature Converter</title>
+
+        <link href="style.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        
+    </head>
+    <body style="background-color: rgb(74, 71, 71);">
+
+        <nav class="navbar bg-dark" data-bs-theme="dark">
+            <div class="con-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="/R.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                <!-- Temperature Converter -->
+              </a>
+              <a href="#" style="text-decoration: none; color: white;">Temperature Converter</a>
+            </div>
+          </nav>
+
+        <form id="tempCalc" onsubmit="calculateTemp(); return false">
+
+            <span style="color: white; font-size: xx-large;">Enter the value to Convert</span>
+            <br/><input type="number" name="temp" id="temp">
+            <select name="temp_diff" id="temp_diff">
+                
+                <option value="fah">&#176;Celsius</option>
+                <option value="cel">&#176;Fahrenheit</option>
+                
+            </select><br/> 
+            <button type="submit" class="btn btn-success">Convert</button>
+            <button type="reset" class="btn btn-danger">Reset</button>
+                <br>
+            <span id="resultContainer" style="color:white;"></span>
+
+        </form>
+        <script src="script.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </body>
+</html>
